@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+#logo-top {
+    width: 200px;
+    margin: auto;
+}
+
+#logo-top img {
+    width: 190px;
+}
+
+
+#msg-top {
+    width: 100%;
+    height: 1.5em;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#sous-logo {
+    display: flex;
+}
+
+#recherche {
+    align-self: center;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 100px;
+    margin: auto;
+    padding: 5px;
+    background: linear-gradient(to top, rgb(255, 172, 133), rgb(166, 166, 255));
+}
+
+#recherche-inp {
+    font-size: large;
+    color: gray;
+    height: 3em;
+    width: 100%;
+    padding: 5px;
+    border-radius: 100px;
+    align-self: center;
+}
+
+#mini-menu {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-self: flex-end;
+    margin-right: 50px;
+}
+#mini-menu a{
+    text-decoration: none;
+    color: rgb(255, 135, 80);
+}
+.icones-mini-menu{
+    font-size: 75px;
+}
+
+
+#navbar {
+    margin: auto;
+    background-color: rgb(255, 213, 196);
+    color: rgb(21, 21, 116);
+    font-weight: bold;
+}
+#navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar ul li{
+    list-style-type: none;
+}
