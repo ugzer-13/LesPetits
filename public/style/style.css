@@ -131,7 +131,9 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
+
 .fa-brands{
-    color: blue;
+    color: rgb(111, 111, 189);
     font-size: 3em;
 }
