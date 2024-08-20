@@ -8,7 +8,7 @@
     <div id="left"></div>
     <div id="recherche">
         <input type="text" name="recherche" id="recherche-inp">
-        <a href=""><span class="icone-rech"><i class="fa-solid fa-magnifying-glass"></span></a></i>
+        <a href=""><span class="icone-rech"><i class="fa-solid fa-magnifying-glass"></i></span></a>
     </div>
     <div id="mini-menu">
         <a href="#"><span class="icones-mini-menu"><i class="fa-solid fa-user"></i></span><br>Compte</a>
