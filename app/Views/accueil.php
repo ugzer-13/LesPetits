@@ -3,15 +3,40 @@
 <title>Hello acceuil</title>
 <?= $this->endSection() ?>
 <?= $this->section('custombody') ?>
-<div>HELLO WORLD</div>
+
 <section>
+<div class="center">
+        <div class="bloc-fixe">
+           <h3>PROMOTIONS</h3>
+            <div class="container ">
+                <div>
+                    <img src="images/archetecture lego.jpeg" alt="archetecture">
+                </div>
+                <div>
+                    <img src="images/ligne-droit.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="images/th (1).jpeg" alt="lego"></div>
+                </div>
+                
+                
+            </div>
+        <div class="bloc-fixe">
+            <h3>PLUS VENDUS</h3>
+            <div class="inline-container ">
+               <div>
+                    <img src="images/archetecture lego.jpeg" alt="lego"></div>
+                </div>
+                
+                <div>
+                    <img src="images/tour.jpeg" alt="lego"></div>
+                </div>
+                
+                
+            </div>
+        </div>
+</div>
 <div class="centre">
-        <div class="bloc-fixe">
-            <title>PROMOTIONS</title>
-            <img src="" alt="">
-        </div>
-        <div class="bloc-fixe">
-            Texte du bloc fixe. Lorem ipsum et compagnie.
-        </div>
+
 </section>
 <?= $this->endSection() ?>
