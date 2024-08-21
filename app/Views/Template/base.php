@@ -21,7 +21,6 @@
 
         </header>
         <?= $this->renderSection('custombody') ?>
-
         <?php include('footer.php'); ?>
     </div>
 

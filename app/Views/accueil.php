@@ -3,5 +3,5 @@
 <title>Hello acceuil</title>
 <?= $this->endSection() ?>
 <?= $this->section('custombody') ?>
-<div>HELLO WORLD</div>
+<div id="corps">HELLO WORLD </div>
 <?= $this->endSection() ?>

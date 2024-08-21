@@ -12,6 +12,12 @@
     flex-direction: column;
     width: 100%;
     margin: auto;
+    justify-content: stretch;
+    min-height: 100%;
+}
+
+html, body{
+    height: 100%;
 }
 
 #logo-top {
@@ -136,4 +142,9 @@ footer {
 .fa-brands{
     color: rgb(0, 0, 0);
     font-size: 3em;
+}
+
+#corps{
+    flex-grow: 1;
+
 }
