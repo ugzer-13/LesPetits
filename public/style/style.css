@@ -137,3 +137,11 @@ footer {
     color: rgb(0, 0, 0);
     font-size: 3em;
 }
+.bloc-fixe  {
+    display: inline-block;
+    border: solid 1px;
+    width: 300px;
+    height: 160px;
+    margin: 1em;
+    vertical-align: top;
+            }
