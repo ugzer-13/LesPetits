@@ -152,16 +152,15 @@ footer {
     margin: 1em;
     vertical-align: top;
             }
-.container{
-                display: flex;
-                flex-direction: row;
-                margin-left: 30px;
-                margin-bottom: 30px;
-            }
-.inline-container{
-                display: inline-flex;}
+.card img {
+    max-height: 150px;
+    object-fit: contain;
+}
 
-                .g1{
-                    grid-column: 1;
-                    grid-row: 1;
-                }
+.ages .card {
+    background-color: #f8f9fa;
+}
+
+.ages .card p {
+    font-weight: bold;
+}
