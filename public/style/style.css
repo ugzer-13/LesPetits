@@ -7,11 +7,18 @@
 
 }
 
+
 #container-main {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
+    justify-content: stretch;
+    min-height: 100%;
+}
+
+html, body{
+    height: 100%;
 }
 
 #logo-top {
@@ -153,3 +160,8 @@ footer {
             }
 .inline-container{
                 display: inline-flex;}
+
+                .g1{
+                    grid-column: 1;
+                    grid-row: 1;
+                }

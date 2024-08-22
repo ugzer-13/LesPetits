@@ -23,12 +23,12 @@
             </div>
         <div class="bloc-fixe">
             <h3>PLUS VENDUS</h3>
-            <div class="inline-container ">
+            <div class="container g1">
                <div>
                     <img src="images/archetecture lego.jpeg" alt="lego"></div>
                 </div>
                 
-                <div>
+                <div >
                     <img src="images/tour.jpeg" alt="lego"></div>
                 </div>
                 
@@ -37,6 +37,18 @@
         </div>
 </div>
 <div class="centre">
+
+<div class="container">
+                <div>
+                    <img src="" alt="lego"></div>
+                </div>
+                
+                <div>
+                    <img src="images/tour.jpeg" alt="lego"></div>
+                </div>
+                
+
+</div>
 
 </section>
 <?= $this->endSection() ?>
