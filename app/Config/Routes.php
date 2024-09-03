@@ -6,5 +6,10 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('/product/(:num)', 'Catalog::productLookupByID/$1');
-$routes->get('/products/(:alphanum)', 'Catalog::productsLookupByCategory/$1');
+
+$routes->get('/produits', 'Produits::GetProduits');
+$routes->get('/marques', 'Marques::GetMarques');
+
+$routes->get('/produit/(:num)', 'Produits::GetProduitByID/$1');
+$routes->get('/marque/(:num)', 'Marques::GetMarqueByID/$1');
+$routes->get('/marque/(:num)/all', 'Marques::GetProduitsByMarque/$1');
