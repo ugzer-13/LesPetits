@@ -3,11 +3,12 @@
 <title>Hello acceuil</title>
 <?= $this->endSection() ?>
 <?= $this->section('custombody'); ?>
-<ul class="products-list">
-<h1><?= $marque ->nom_marque ?></h1>
-<?php foreach ($produits as $p) : ?> 
+<h1><?= $produits[0]->nom_marque ?></h1>
 
-<p><?= $p ?></p>
+<?php foreach ($produits as $p) : ?> 
+<ul class="products-list">
+
+<p><?= $p->nom_produit ?></p></ul>
+
 <?php endforeach ?>
-</ul>
 <?= $this->endSection() ?>

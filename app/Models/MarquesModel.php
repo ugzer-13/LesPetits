@@ -21,7 +21,7 @@ class MarquesModel extends Model
     }
 
     public function ListeProduitsByMarque(int $idmarque):array {
-        $produits = $this->select('idproduit,nom_produit')->join('marque','marque.idmarque=produit.idmarque')->where('idmarque', $idmarque)->get()->getResult();
+        $produits = $this->select('idproduit,nom_produit,nom_marque')->join('produit','idmarque')->where('idmarque', $idmarque)->get()->getResult();
         return $produits;
     }
 }
