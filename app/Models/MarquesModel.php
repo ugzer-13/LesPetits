@@ -15,13 +15,14 @@ class MarquesModel extends Model
         $marques = $this->get()->getResult();
         return $marques;
     }
+    
     public function ListeUneMarque(int $idmarque):object {
         $marque = $this->where('idmarque', $idmarque)->get()->getRow();
         return $marque;
     }
 
-    public function ListeProduitsByMarque(int $idmarque):array {
-        $produits = $this->select('idproduit,nom_produit,nom_marque')->join('produit','idmarque')->where('idmarque', $idmarque)->get()->getResult();
+    public function ListeProduitsByMarque($idmarque):array {
+        $produits = $this->select('idproduit,nom_produit,nom_marque')->join('produit','idmarque')->where('nom_marque', $idmarque)->get()->getResult();
         return $produits;
     }
 }

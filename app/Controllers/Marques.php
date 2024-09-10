@@ -28,7 +28,7 @@ class Marques extends BaseController
         return view('marque', $data);
     }
 
-    public function GetProduitsByMarque(int $idmarque): string
+    public function GetProduitsByMarque($idmarque): string
     {
         $data = [
             'produits'=>$this->model->ListeProduitsByMarque($idmarque)
