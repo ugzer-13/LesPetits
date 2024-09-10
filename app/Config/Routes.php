@@ -19,5 +19,3 @@ $routes->get('/getAllCategorie','Categorie::getAllCategorie');
 $routes->get('/getOneCategorie/(:any)','Categorie::getOneCategorie/$1');
 $routes->get('/addCategorie','Categorie::addCategorie');
 $routes->add('/addcategorie2','Categorie::addCategorie2');
-$routes->get('getAllPosts','Api::getAllPosts');
-$routes->get('/addPost','Api::addPost');
