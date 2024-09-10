@@ -91,7 +91,7 @@ protected $request;
 
                 ];
                 $this->model->insertCategorie($data);
-                return view ('succes',$data);
+                return view ('accueil',$data);
 
     }
     

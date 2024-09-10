@@ -4,7 +4,7 @@
 <?=$this->endSection()?>
 <?=$this->Section('custombody')?>
 <h1>ajouter une Categorie</h1>
-<?=form_open('admin/addcategorie2')?>
+<?=form_open('addcategorie2')?>
 
 <?=form_label ('nom_categorie','nom_categorie')?>
 <?=form_input('nom_categorie')?> 
