@@ -19,3 +19,10 @@ $routes->get('/age/(:num)', 'Ages::GetAgeByID/$1');
 $routes->get('/categories','Categorie::getAllCategorie');
 $routes->get('/categorie/(:any)','Categorie::getOneCategorie/$1');
 $routes->add('/addcategorie','Categorie::addCategorie');
+$routes->get('/getallutilisateur','Utilisateur::getAllUtilisateur');
+$routes->get('/getoneutilisateur/(:any)','Utilisateur::getOneUtilisateur/$1');
+
+$routes->get('/suputilisateur/(:any)','Utilisateur::supUtilisateur/$1');
+$routes->get('/getemailutilisateur/(:any)','Utilisateur::getEmailUtilisateur/$1');
+$routes->add('/addutilisateur','Utilisateur::addUtilisateur');
+$routes->add('/majutilisateur/(:any)','Utilisateur::MajUtilisateur/$1');
