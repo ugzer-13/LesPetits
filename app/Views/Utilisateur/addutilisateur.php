@@ -9,7 +9,7 @@
 
 
 <?=form_label ('Email','email_utilisateur')?>
-<?=form_input('email','',[],'email')?><!-- '':pour le value et []pour les classes-->
+<?=form_input('email','',[],'email')?>
 <?=validation_show_error('email')?>
     
 
