@@ -45,7 +45,7 @@ class Utilisateur extends BaseController
         ];
         return view('Utilisateur/getEmailUtilisateur', $data);
     }
-    public function addUtilisateur(): string
+    public function addUtilisateur()
     {
         if ($this->request->is('post') == false) {
             return view('Utilisateur/addutilisateur');
@@ -86,7 +86,7 @@ class Utilisateur extends BaseController
         $this->model->insertUtilisateur($data);
         $id = $this->model->getInsertID();
 
-        return view('Utilisateur/getOneUtilisateur', $data);
+        return redirect()->to(base_url('getoneutilisateur/') . $id);
     }
 
     public function majUtilisateur(int $idutilisateur): string

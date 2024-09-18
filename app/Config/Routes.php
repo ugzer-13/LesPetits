@@ -17,6 +17,9 @@ $routes->get('/ages', 'Ages::GetAges');
 $routes->get('/age/(:num)', 'Ages::GetAgeByID/$1');
 $routes->get('/categories','Categorie::getAllCategorie');
 $routes->get('/categorie/(:any)','Categorie::getOneCategorie/$1');
+
+
+
 $routes->add('/addcategorie','Categorie::addCategorie');
 $routes->get('/getallutilisateur','Utilisateur::getAllUtilisateur');
 $routes->get('/getoneutilisateur/(:any)','Utilisateur::getOneUtilisateur/$1');
