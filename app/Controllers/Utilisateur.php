@@ -33,8 +33,10 @@ class Utilisateur extends BaseController
     public function suputilisateur(int $idutilisateur): string
     {
         $x = $this->model->deleteUtilisateur($idutilisateur);
-        var_dump($x);
-        return view('succes');
+        $data = [
+            "utilisateurs" => $this->model->ListAllUtilisateurs()
+        ];
+        return view('Utilisateur/getAllUtilisateur', $data);
     }
     public function getEmailUtilisateur(int $limit): string
     {
@@ -50,7 +52,7 @@ class Utilisateur extends BaseController
         }
         $rules = [
             "email_utilisateur" => [
-                "label" => "email",
+                "label" => "email_utilisateur",
                 "rules" => "valid_email|required",
                 "errors" => [
                     "valid_email" => "email non valide",
@@ -77,15 +79,14 @@ class Utilisateur extends BaseController
 
         $role = 1;
         $data = [
-
-            "email" => $email,
+            "email_utilisateur" => $email,
             "mdp_utilisateur" => password_hash($mdp_utilisateur, PASSWORD_DEFAULT),
-
-
-
+            "idrole" => $role
         ];
         $this->model->insertUtilisateur($data);
-        return view('accueil', $data);
+        $id = $this->model->getInsertID();
+
+        return view('Utilisateur/getOneUtilisateur', $data);
     }
 
     public function majUtilisateur(int $idutilisateur): string
@@ -103,7 +104,7 @@ class Utilisateur extends BaseController
                 "label" => "email_utilisateur",
                 "rules" => "valid_email|required",
                 "errors" => [
-                    "valid_email" => "email non valid",
+                    "valid_email" => "email non valide",
                     "required" => "email obligatoire"
                 ]
             ]
